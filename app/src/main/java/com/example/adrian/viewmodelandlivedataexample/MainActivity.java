@@ -9,6 +9,8 @@ import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
@@ -24,13 +26,15 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
+    private static final int ACTION_RESULT_AGREGAR_NUEVA_AFILIACION = 3;
+
     private NameViewModel mModel;
     private RelativeLayout rlNoAutorizado;
     private TextView txtCodigoActivacion;
     private ProgressBar progressBarSplash;
 
     private static final int PERMISSION_ALL = 1;
-    private static final String[] PERMISSIONS = {Manifest.permission.READ_PHONE_STATE};
+    public static final String[] PERMISSIONS = {Manifest.permission.READ_PHONE_STATE};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,9 +49,9 @@ public class MainActivity extends AppCompatActivity {
         progressBarSplash.setVisibility(View.VISIBLE);
         rlNoAutorizado.setVisibility(View.GONE);
 
-        if (getSupportActionBar() != null){
+        /*if (getSupportActionBar() != null){
             getSupportActionBar().hide();
-        }
+        }*/
 
         /*
         HeroesViewModel model = ViewModelProviders.of(this).get(HeroesViewModel.class);
@@ -97,6 +101,30 @@ public class MainActivity extends AppCompatActivity {
         if(!Utilerias.hasPermissions(this, PERMISSIONS)){
             ActivityCompat.requestPermissions(this, PERMISSIONS, PERMISSION_ALL);
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main_activity, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                break;
+            case R.id.action_agregar_paciente:
+                Intent iAgregarNuevaAfiliacion = new Intent(MainActivity.this, AgregarNuevaAfiliacion.class);
+                startActivityForResult(iAgregarNuevaAfiliacion,ACTION_RESULT_AGREGAR_NUEVA_AFILIACION);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                //finish();
+                break;
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

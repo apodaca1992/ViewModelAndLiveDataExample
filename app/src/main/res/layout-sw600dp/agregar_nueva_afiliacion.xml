@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AgregarNuevaAfiliacion" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color14"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#ffff"
+                android:inputType="text"
+                android:hint="Nombre (s)"
+                android:textCursorDrawable="@null"
+                android:maxLines="1" >
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/txtApellidoPaterno"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="65dp"
+                android:background="#ffff"
+                android:layout_marginEnd="10dp"
+                android:inputType="text"
+                android:nextFocusDown="@+id/txtApellidoMaterno"
+                android:hint="Apellido Paterno"
+                android:textCursorDrawable="@null"
+                android:maxLines="1" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/txtApellidoMaterno"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="65dp"
+                android:background="#ffff"
+                android:inputType="text"
+                android:hint="Apellido Materno"
+                android:textCursorDrawable="@null"
+                android:maxLines="1" >
+            </EditText>
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/txtApellidoPaterno"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#ffff"
+                android:inputType="text"
+                android:hint="Apellido Paterno"
+                android:textCursorDrawable="@null"
+                android:maxLines="1" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/txtApellidoMaterno"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#ffff"
+                android:inputType="text"
+                android:hint="Apellido Materno"
+                android:textCursorDrawable="@null"
+                android:maxLines="1" >
+            </EditText>
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/txtFechaDeNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#ffff"
+                android:inputType="date"
+                android:hint="Seleccione la fecha de nacimiento"
+                android:textCursorDrawable="@null"
+                android:maxLines="1" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <Spinner
+                android:id="@+id/spnSexo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:spinnerMode="dialog"
+                android:layout_height="65dp"
+                style="@style/spinner_style"
+                android:maxLines="1"
+                android:prompt="@string/strPromptSexo"/>
+
+            <Spinner
+                android:id="@+id/spnMunicipio"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:spinnerMode="dialog"
+                android:layout_height="65dp"
+                android:maxLines="1"
+                style="@style/spinner_style"
+                android:prompt="@string/strPromptMunicipios"/>
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <Spinner
+                android:id="@+id/spnSexo"
+                android:layout_width="match_parent"
+                android:spinnerMode="dropdown"
+                android:layout_height="65dp"
+                style="@android:style/Widget.Spinner"
+                android:maxLines="1"
+                android:prompt="@string/strPromptSexo"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <Spinner
+                android:id="@+id/spnMunicipio"
+                android:layout_width="match_parent"
+                android:spinnerMode="dialog"
+                android:layout_height="65dp"
+                android:maxLines="1"
+                style="@android:style/Widget.Spinner"
+                android:prompt="@string/strPromptMunicipios"/>
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <Spinner
+                android:id="@+id/spnOcupacion"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:spinnerMode="dialog"
+                android:layout_height="65dp"
+                style="@style/spinner_style"
+                android:maxLines="1"
+                android:prompt="@string/strPromptOcupaciones"/>
+            <!-- style="@android:style/Widget.Holo.Light.Spinner" -->
+
+            <Spinner
+                android:id="@+id/spnGradoDeEstudio"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:spinnerMode="dialog"
+                android:layout_height="65dp"
+                android:textColor="@color/c_pressed_item_list"
+                style="@style/spinner_style"
+                android:maxLines="1"
+                android:prompt="@string/strPromptGradosDeEstudios"/>
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/txtSeccion"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#ffff"
+                android:inputType="number"
+                android:hint="Sección"
+                android:textCursorDrawable="@null"
+                android:maxLines="1" >
+            </EditText>
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/txtSeccion"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="65dp"
+                android:layout_marginEnd="10dp"
+                android:background="#ffff"
+                android:nextFocusDown="@+id/txtTelefonoCasa"
+                android:inputType="number"
+                android:hint="Sección"
+                android:textCursorDrawable="@null"
+                android:maxLines="1" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/txtTelefonoCasa"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="65dp"
+                android:background="#ffff"
+                android:nextFocusDown="@+id/txtTelefonoMovil"
+                android:layout_marginEnd="10dp"
+                android:inputType="number"
+                android:hint="Teléfono Casa"
+                android:textCursorDrawable="@null"
+                android:maxLines="1" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/txtTelefonoMovil"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="65dp"
+                android:background="#ffff"
+                android:inputType="number"
+                android:hint="Teléfono Movil"
+                android:textCursorDrawable="@null"
+                android:maxLines="1" >
+            </EditText>
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/txtTelefonoCasa"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#ffff"
+                android:inputType="number"
+                android:hint="Teléfono Casa"
+                android:textCursorDrawable="@null"
+                android:maxLines="1" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/txtTelefonoMovil"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#ffff"
+                android:inputType="number"
+                android:hint="Teléfono Movil"
+                android:textCursorDrawable="@null"
+                android:maxLines="1" >
+            </EditText>
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/txtCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#ffff"
+                android:inputType="text"
+                android:hint="Correo"
+                android:textCursorDrawable="@null"
+                android:maxLines="1" >
+            </EditText>
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp">
+
+            <EditText
+                android:id="@+id/txtCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="#ffff"
+                android:inputType="text"
+                android:hint="Correo"
+                android:textCursorDrawable="@null"
+                android:maxLines="1" >
+            </EditText>
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:id="@+id/btnConsultarPaciente"
+                android:layout_width="380dp"
+                android:layout_height="65dp"
+                android:background="@drawable/btn_background_buscar"
+                android:textColor="@color/windowBackground"
+                android:textSize="@dimen/textSizeButton"
+                android:text="Buscar"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAgregarPaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="ACTUALICE LOS DATOS DEL PACIENTE \n Y DE CLICK EN EL BOTON AGREGAR PACIENTE."
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+
+            <Button
+                android:id="@+id/btnAgregarPaciente"
+                android:layout_width="380dp"
+                android:layout_height="65dp"
+                android:background="@drawable/btn_background_agregar_alta_paciente"
+                android:textColor="@color/windowBackground"
+                android:textSize="@dimen/textSizeButton"
+                android:text="AGREGAR PACIENTE"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAltaPaciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="NO SE ENCONTRARON PACIENTES EN LA BUSQUEDA.\n PROPORCIONE TODOS LOS DATOS DEL PACIENTE \n Y DE CLICK EN REGISTRAR PACIENTE PARA DAR DE ALTA."
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"/>
+
+            <Button
+                android:id="@+id/btnAltaPaciente"
+                android:layout_width="380dp"
+                android:layout_height="65dp"
+                android:background="@drawable/btn_background_agregar_alta_paciente"
+                android:textColor="@color/windowBackground"
+                android:textSize="@dimen/textSizeButton"
+                android:text="REGISTRAR PACIENTE"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

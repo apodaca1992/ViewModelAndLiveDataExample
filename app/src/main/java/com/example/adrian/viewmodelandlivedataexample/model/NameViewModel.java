@@ -10,6 +10,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
+import com.example.adrian.viewmodelandlivedataexample.MainActivity;
 import com.example.adrian.viewmodelandlivedataexample.R;
 import com.example.adrian.viewmodelandlivedataexample.utilerias.Utilerias;
 import com.example.adrian.viewmodelandlivedataexample.volley.VolleySingleton;
@@ -30,6 +31,10 @@ public class NameViewModel extends ViewModel {
         oContext = prContext;
         if (android.os.Build.VERSION.SDK_INT < Build.VERSION_CODES.M){
             verificarDispositivo();
+        }else{
+            if(Utilerias.hasPermissions(prContext, MainActivity.PERMISSIONS)){
+                verificarDispositivo();
+            }
         }
     }
 

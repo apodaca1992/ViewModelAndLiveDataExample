@@ -7,6 +7,24 @@
     <string name="strSeparadorIdentificadorCompuesto">$</string>
 
 
+    <string name="strControlApi">control</string>
+    <string name="strIdentificadorDispositivo">identificador</string>
+    <string name="strUrlLlenarDatosSpinner">spinners-obtenerDatosAgregarAfiliacion</string> <!--obtenerDatosSpinnersAgregarAfiliacion-->
+    <string name="strBusquedaDePaciente">Realizando Búsqueda..</string>
+
+    <!-- string agregar_nueva_afiliacion -->
+    <string name="strPromptMunicipios">Municipios</string>
+    <string name="strPromptSexo">Sexo</string>
+    <string name="strPromptResponsables">Responsables</string>
+    <string name="strPromptOcupaciones">Ocupaciones</string>
+    <string name="strPromptGradosDeEstudios">Grados de Estudios</string>
+    <string name="strCampoRequerido">Campo requerido.</string>
+
+
+
+
+
+
     <string name="strUrlRegistrarDispositivo">http://desarrolloapodaca.000webhostapp.com/fcmAsesorCCU/api/registerDevice.php</string>
 
     <!-- variable Parametros consulta-->

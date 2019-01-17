@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="header_left_padding">16dp</dimen>
+    <dimen name="header_height">192dp</dimen>
+
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- agregar_nueva_afiliacion -->
+    <dimen name="textSizeButton">18sp</dimen>
+
+    <!-- configurar_impresora -->
+    <dimen name="textSizeDispositivosVinculados">24sp</dimen>
+
+    <!-- custom_toast -->
+    <dimen name="textSizeCustomToast">14sp</dimen>
+
+    <!-- descargar_de_datos -->
+    <dimen name="textSizePorcentajeDescarga">20sp</dimen>
+    <dimen name="textSizeAccionDescarga">17sp</dimen>
+
+    <!-- item_dialog_paciente_opciones -->
+    <dimen name="textSizeNombreOpcion">18sp</dimen>
+
+    <!-- item_paciente_consulta -->
+    <dimen name="textSizeNombrePacienteConsulta">16sp</dimen>
+
+    <!-- item_paciente_consulta -->
+    <dimen name="textSizeNombrePacienteConsulta2">18sp</dimen>
+
+    <!-- item_paciente_ruta -->
+    <dimen name="textSizeNombrePaciente">20sp</dimen>
+    <dimen name="textSizeTurno">21sp</dimen>
+
+    <!-- item_paciente_seccion -->
+    <dimen name="textSizeNombreCompletoPaciente">20sp</dimen>
+
+    <!-- item_selecionar_impresora -->
+    <dimen name="textSizecheckboxImpresora">22sp</dimen>
+
+    <!-- item_seleccionar_ruta -->
+    <dimen name="textSizeNombreLocalidad">18sp</dimen>
+    <dimen name="textSizeLocalidad">21sp</dimen>
+
+    <!-- item_seleccionar_seccion -->
+    <dimen name="textSizeSeccion">21sp</dimen>
+
+    <!-- item_selected_generic_spinner -->
+    <dimen name="textSizeNombre">19sp</dimen>
+
+    <!-- item_servicios_checkbox -->
+    <dimen name="textSizeCheckboxServicio">24sp</dimen>
+
+    <!-- splash_screen -->
+    <dimen name="textSizeTextView4">19sp</dimen>
+    <dimen name="textSizeTxtIdentificadorDispositivo">28sp</dimen>
+
+    <!-- item_generic_spinner.xml -->
+    <dimen name="textSizeOpcionNombre">19sp</dimen>
+
+    <!-- activity_main,listado_pacientes_ruta -->
+    <dimen name="tsToolbarTitle">18sp</dimen>
+
+    <!-- activity_maps -->
+    <dimen name="textSizeEditText">15sp</dimen>
+
+    <!-- info_contents_marker -->
+    <dimen name="textSizeInfo">18sp</dimen>
+
+</resources>

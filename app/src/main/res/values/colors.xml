@@ -8,4 +8,22 @@
 
     <color name="color">#6479f9</color>
     <color name="colorBackgroundNotificacion">#fff</color>
+
+    <color name="c_texto_lista_principal">#32393D</color>
+
+    <color name="color2">#80C4E8</color>
+
+    <color name="windowBackground">#FFFFFF</color>
+
+    <color name="c_pressed_item_list">#c7c7c7</color>
+
+    <color name="color14">#79acafb3</color>
+
+    <color name="color11pressed">#b5c695</color>
+
+    <color name="color11">#6C9812</color>
+
+    <color name="color10pressed">#edc891</color>
+
+    <color name="color10">#f09714</color>
 </resources>
